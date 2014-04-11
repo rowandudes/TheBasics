@@ -7,48 +7,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.app.main$PlaceholderFragment"
-    android:background="@drawable/bggg">
+    android:background="@drawable/appbg">
 
-    <TextView
-        android:gravity="center"
-        android:textStyle="bold"
-        android:text="@string/hello_world"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView" />
 
     <TextView
         android:gravity="center"
         android:text="This is where the magic happens..."
+        android:textColor="#FFFFFF"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView2" />
+        android:id="@+id/textView2"
+        android:layout_below="@+id/isPrime"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/tutorial1"
         android:text="Clicker"
         android:textSize="25dp"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="69dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Magic"
         android:id="@+id/tutorial2"
-        android:layout_marginBottom="43dp"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:textSize="25dp"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
 
     <TextView
         android:gravity="center"
@@ -57,14 +54,18 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="'Is it Prime?' Button"
+        android:textColor="#FFFFFF"
         android:id="@+id/isPrime"
-        android:layout_above="@+id/tutorial2"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:textColor="#FFFFFF"
         android:ems="10"
         android:id="@+id/number"
         android:layout_alignBottom="@+id/tutorial2"
@@ -75,8 +76,9 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="..."
+        android:textColor="#FFFFFF"
         android:id="@+id/answer"
-        android:layout_below="@+id/number"
+        android:layout_below="@+id/tutorial2"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
